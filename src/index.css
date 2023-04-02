@@ -24,3 +24,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 130%;
+  /* or 58px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+h4 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 154.5%;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #5c8692;
+}

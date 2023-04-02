@@ -1,0 +1,13 @@
+.benefits h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 120%;
+  /* or 31px */
+
+  display: flex;
+  align-items: center;
+
+  color: #141414;
+}

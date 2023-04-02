@@ -1,4 +1,4 @@
-button {
+.readMore {
   padding: 18px 43px 19px;
   font-family: "Manrope";
   font-style: normal;
@@ -13,7 +13,7 @@ button {
 
   color: #141414;
 }
-img {
+.featuresImage {
   margin-bottom: 19px;
 }
 p {
@@ -31,7 +31,7 @@ p {
   color: #555555;
 }
 
-h1 {
+.features h1 {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;

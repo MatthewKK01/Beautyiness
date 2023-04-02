@@ -1,0 +1,21 @@
+.testimonials h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 130%;
+  /* or 58px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: #141414;
+  margin-bottom: 40px;
+}
+
+.user h3 {
+  font-family: "Playfair Display";
+}
+.user span {
+  font-family: "Manrope";
+}

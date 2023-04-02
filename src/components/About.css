@@ -1,0 +1,42 @@
+.about {
+  background: #ebf3f5;
+  box-shadow: 0px 37px 60px rgba(0, 0, 0, 0.02);
+}
+article > h1 {
+  width: 420px;
+
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 130%;
+  /* or 58px */
+
+  letter-spacing: -0.01em;
+
+  color: #141414;
+}
+.h3 {
+  width: 99px;
+  height: 52px;
+
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  /* or 26px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #141414;
+}
+.abs > div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}

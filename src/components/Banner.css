@@ -10,7 +10,7 @@
 
   color: #5c8692;
 }
-.content > h1 {
+.content h1 {
   width: 501px;
   font-family: "Playfair Display";
   font-style: normal;
@@ -18,7 +18,7 @@
   font-size: 70px;
   line-height: 115%;
   /* or 80px */
-
+  text-align: left;
   letter-spacing: -0.01em;
 
   color: #141414;
