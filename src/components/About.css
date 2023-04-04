@@ -4,7 +4,7 @@
 }
 article > h1 {
   width: 420px;
-
+  text-align: left;
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;

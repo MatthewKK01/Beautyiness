@@ -1,0 +1,15 @@
+footer li {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 200%;
+  /* or 34px */
+
+  letter-spacing: -0.01em;
+
+  color: #ffffff;
+}
+footer ul {
+  font-family: "Playfair Display";
+}

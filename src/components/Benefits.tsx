@@ -3,7 +3,7 @@ import "./Benefits.css";
 
 function Benefits() {
   return (
-    <section className="benefits">
+    <section className="benefits py-36">
       <h4 className="text-center">Our Awesome Benefits</h4>
       <h1 className="mb-11">Actually what you’ll get from</h1>
       <div className="container w-[1200px] m-auto grid grid-cols-3 gap-x-28 gap-y-10 grid-rows-2">

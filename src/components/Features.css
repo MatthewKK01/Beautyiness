@@ -16,20 +16,6 @@
 .featuresImage {
   margin-bottom: 19px;
 }
-p {
-  margin-top: 11px;
-  margin-bottom: 30px;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 165%;
-  /* or 30px */
-
-  letter-spacing: 0.02em;
-
-  color: #555555;
-}
 
 .features h1 {
   font-family: "Playfair Display";

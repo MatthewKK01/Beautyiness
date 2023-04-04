@@ -1,0 +1,57 @@
+.discount {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 175%;
+  /* identical to box height, or 32px */
+
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+.flat {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 175%;
+  /* or 26px */
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+input,
+textarea {
+  border: 1px solid #5c8692;
+  width: 400px;
+  height: 65px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #555555;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form {
+  box-shadow: 0px 20px 40px rgba(42, 68, 75, 0.13);
+}

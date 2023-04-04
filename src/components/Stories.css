@@ -1,0 +1,36 @@
+.stories h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140%;
+
+  width: 300px;
+  /* or 31px */
+
+  letter-spacing: 0.02em;
+
+  color: #141414;
+}
+
+.stories h4 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 125%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.stories button {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 125%;
+
+  width: 250px;
+  height: 65px;
+  color: #141414;
+  border: 2px solid #5c8692;
+}
