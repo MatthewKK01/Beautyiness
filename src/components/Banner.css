@@ -27,7 +27,7 @@
   background-image: url(../images/Photo.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: multiply;
+  background-blend-mode: luminosity;
 }
 .content > p {
   font-family: "Manrope";
@@ -61,4 +61,12 @@
   text-transform: uppercase;
 
   color: #ffffff;
+}
+.beautyness {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 125%;
+  /* identical to box height, or 35px */
 }
