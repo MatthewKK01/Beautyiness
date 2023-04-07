@@ -16,7 +16,7 @@ article > h1 {
 
   color: #141414;
 }
-.h3 {
+.about .h3 {
   width: 99px;
   height: 52px;
 
@@ -26,10 +26,6 @@ article > h1 {
   font-size: 22px;
   line-height: 120%;
   /* or 26px */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
 
   color: #141414;
 }

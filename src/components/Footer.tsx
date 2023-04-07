@@ -155,7 +155,7 @@ function Footer() {
         </article>
       </div>
       <article className="copyright bg-[#111E22] text-white text-center p-5 font-normal text-lg">
-        <span>&copy;</span> Copyright 2021. Drafted by Victor Themes.
+        <span>&copy;</span> Copyright 2023. Drafted by Mate Kavelashvili.
       </article>
     </footer>
   );

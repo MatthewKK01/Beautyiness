@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutBanner.css";
-
+import Button from "./Button";
+import { Link } from "react-router-dom";
 function AboutBanner() {
   return (
     <section className="aboutBanner py-[117px] px-[636px]">
@@ -9,7 +10,9 @@ function AboutBanner() {
         <h1 className="text-white text-[55px]">
           The big story behind, our <br /> beautyness center
         </h1>
-        <button className="block m-auto mt-8">make reservation</button>
+        <Link to="/appointment">
+          <Button text={"make resetvation"} />
+        </Link>
       </div>
     </section>
   );

@@ -12,7 +12,21 @@
   color: #141414;
   margin-bottom: 40px;
 }
+.testimonials p {
+  padding: 44px 44px 44px 49px;
+  background: #ffffff;
+  height: 234px;
 
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 180%;
+  /* or 34px */
+
+  color: #141414;
+  margin: 0;
+}
 .user h3 {
   font-family: "Playfair Display";
 }

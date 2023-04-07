@@ -53,7 +53,7 @@ function About() {
                 fill="#7A9CA5"
               />
             </svg>
-            <h3 className="h3">Beauty Experts</h3>
+            <h3 className="h3 text-center ">Beauty Experts</h3>
           </div>
           <div className="bg-white w-40 h-44 border border-[#1E2C30]">
             <svg
@@ -68,7 +68,7 @@ function About() {
                 fill="#7A9CA5"
               />
             </svg>
-            <h3 className="h3">Great Services</h3>
+            <h3 className="h3 text-center">Great Services</h3>
           </div>
           <div className="bg-white w-40 h-44 border border-[#1E2C30]">
             <svg
@@ -87,7 +87,7 @@ function About() {
                 fill="#7A9CA5"
               />
             </svg>
-            <h3 className="h3">100% Genuine</h3>
+            <h3 className="h3 text-center">100% Genuine</h3>
           </div>
         </article>
       </article>

@@ -61,3 +61,13 @@ p {
 
   color: #555555;
 }
+.hhh {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  /* or 26px */
+
+  color: #141414;
+}
