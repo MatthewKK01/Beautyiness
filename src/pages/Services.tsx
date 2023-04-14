@@ -1,14 +1,14 @@
 import React from "react";
 import AboutBanner from "../components/AboutBanner";
-import ServicesSection from "../components/ServicesSection";
+import facemask from "../images/faceMask.jpg";
+import "../components/Services.css";
+import cucumber from "../images/cucumpers.jpg";
 
-import bgCenter from "../images/bg-center.png";
-import cucumber from "../images/Photo.jpg";
-import faceMask from "../images/faceMask.jpg";
 import tmebi from "../images/tmebi.jpg";
 import kvebi from "../images/kvebi.jpg";
-import ServicesComponent from "../components/ServicesComponent";
+
 import { Link } from "react-router-dom";
+import ServicesComponent from "../components/ServicesComponent";
 
 function Services() {
   return (
@@ -17,17 +17,10 @@ function Services() {
         title={"Our Services"}
         content={"Well Experience Beauty at your Service"}
       />
-      <ServicesSection
-        leftPhoto={cucumber}
-        bgCenter={bgCenter}
-        rightPhoto={faceMask}
-      />
-      <article className="grid grid-cols-2 relative grid-rows-2 pb-32 gap-0 w-[1200px] m-auto">
-        <img
-          src={bgCenter}
-          alt=""
-          className="absolute top-1/2 left-1/2 bg-[#134236] -z-10 translate-x-[-50%] translate-y-[-50%]"
-        />
+
+      <article className="grid grid-cols-2 relative grid-rows-2 gap-0 w-[1200px] m-auto">
+        <div className="bgCenter absolute left-1/2 top-1/2 -translate-x-1/2  -translate-y-1/2 -z-10"></div>
+
         <img src={tmebi} alt="" />
         <div className="pt-7 pl-16">
           <ServicesComponent service={"face mask"} cost={48} />
@@ -54,6 +47,37 @@ function Services() {
         </div>
         <img src={kvebi} alt="" />
       </article>
+      <section className="services relative w-[1200px] m-auto flex flex-col items-center">
+        <article className="grid grid-cols-2 grid-rows-2 gap-0">
+          <div className="bgCenter absolute left-1/2 top-1/2 -translate-x-1/2  -translate-y-1/2 -z-10"></div>
+          <div className="bgCenter absolute left-1/2 top-0 -translate-x-1/2  -translate-y-1/2 -z-10"></div>
+
+          <img src={cucumber} alt="" />
+          <div className="pt-7 pl-16">
+            <ServicesComponent service={"face mask"} cost={48} />
+            <ServicesComponent service={"full body massage"} cost={54} />
+            <ServicesComponent service={"geothermal spa"} cost={54} />
+            <ServicesComponent service={"sauna relax"} cost={73} />
+            <Link to="/appointment">
+              <button className="border-2 mt-9 border-smalt-blue-500 px-8 py-6 text-sm font-extrabold uppercase leading-4 tracking-widest">
+                get an apointment
+              </button>
+            </Link>
+          </div>
+          <div className="pt-32 pr-16">
+            <ServicesComponent service={"face mask"} cost={48} />
+            <ServicesComponent service={"full body massage"} cost={54} />
+            <ServicesComponent service={"geothermal spa"} cost={54} />
+            <ServicesComponent service={"sauna relax"} cost={73} />
+            <Link to="/appointment">
+              <button className="border-2 mt-9 border-smalt-blue-500 px-8 py-6 text-sm font-extrabold uppercase leading-4 tracking-widest">
+                get an apointment
+              </button>
+            </Link>
+          </div>
+          <img src={facemask} alt="" />
+        </article>
+      </section>
       <section className=" py-[131px] flex flex-col items-center justify-center bg-[#EBF3F5]">
         <div className="w-[1200px] m-auto">
           <h4 className="text-center">flat discount</h4>

@@ -1,0 +1,7 @@
+.bgCenter {
+  width: 180px;
+  height: 180px;
+  background-image: url(../images/bgCenter.png);
+  background-color: #1e2c30;
+  background-blend-mode: luminosity;
+}
