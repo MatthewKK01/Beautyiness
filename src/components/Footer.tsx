@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -123,12 +124,25 @@ function Footer() {
           <nav className="flex gap-32 justify-between">
             <ul className="text-white font-bold text-2xl capitalize ">
               explore
-              <li className="mt-5">Home</li>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Appointments</li>
-              <li>Blog</li>
-              <li>Contact Us</li>
+              <Link to={"/"}>
+                <li className="mt-5">Home</li>
+              </Link>
+              <Link to={"/about"}>
+                <li>About Us</li>{" "}
+              </Link>
+              <Link to={"/services"}>
+                <li>Services</li>
+              </Link>
+              <Link to={"/appointment"}>
+                <li>Appointments</li>
+              </Link>
+              <Link to={"/blog"}>
+                {" "}
+                <li>Blog</li>
+              </Link>
+              <Link to={"/contact"}>
+                <li>Contact Us</li>
+              </Link>
             </ul>
             <ul className="text-white font-bold text-2xl capitalize ">
               keep in touch

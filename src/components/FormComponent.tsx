@@ -2,7 +2,7 @@ import React from "react";
 
 function FormComponent() {
   return (
-    <form className="form w-[550px]  bg-white px-[75px] flex flex-col gap-y-4 py-[66px]">
+    <form className="form w-[550px]  bg-white px-[75px] flex flex-col items-center gap-y-4 py-[66px]">
       <div className="flex flex-row relative  items-center">
         <input
           placeholder="Name"
@@ -151,7 +151,7 @@ function FormComponent() {
         </svg>
       </div>
 
-      <button className=" bg-smalt-blue-500 text-white uppercase font-bold flex flex-row items-center justify-center gap-3 py-[23px] px-[109px]">
+      <button className=" bg-smalt-blue-500 w-full text-white uppercase font-bold flex flex-row items-center justify-center gap-3 py-[23px] px-[109px]">
         Get an appointment
       </button>
     </form>

@@ -9,7 +9,10 @@ import fiqrianiwomen from "../images/fiqrianiwomen.jpg";
 function AboutPage() {
   return (
     <div>
-      <AboutBanner />
+      <AboutBanner
+        title={"SHORT STORY ABOUT US"}
+        content={"The big story behind, our beautyness center"}
+      />
       <article className="w-1/2 m-auto py-32">
         <article className="flex flex-col justify-center items-center">
           <h4 className="mb-2">Our values</h4>

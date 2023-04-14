@@ -3,6 +3,7 @@ import "./Features.css";
 import spa from "../images/spa.png";
 import hair from "../images/hair.jpg";
 import feet from "../images/feet.jpg";
+import { Link } from "react-router-dom";
 function Features() {
   return (
     <section className=" features px-[360px] py-[151px]">
@@ -14,7 +15,9 @@ function Features() {
             If you are going to use a passage offer Lorem Ipsum, you need to be
             sure hidden in the middle of text.
           </p>
-          <button className="readMore">Read More</button>
+          <Link to="/services">
+            <button className="readMore">Read More</button>
+          </Link>
         </div>
         <div>
           <img className="featuresImage" src={hair} alt="" />
@@ -23,7 +26,9 @@ function Features() {
             If you are going to use a passage offer Lorem Ipsum, you need to be
             sure hidden in the middle of text.
           </p>
-          <button className="readMore">Read More</button>
+          <Link to="/services">
+            <button className="readMore">Read More</button>
+          </Link>
         </div>
         <div>
           <img className="featuresImage" src={feet} alt="" />
@@ -32,7 +37,9 @@ function Features() {
             If you are going to use a passage offer Lorem Ipsum, you need to be
             sure hidden in the middle of text.
           </p>
-          <button className="readMore">Read More</button>
+          <Link to="/services">
+            <button className="readMore">Read More</button>
+          </Link>
         </div>
       </div>
     </section>
