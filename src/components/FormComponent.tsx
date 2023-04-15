@@ -1,10 +1,49 @@
 import React from "react";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+import { useForm } from "react-hook-form";
+
+interface Myfields {
+  name: string;
+  email: string;
+  phone: number;
+  service: string;
+  note?: string;
+}
 
 function FormComponent() {
+  const schema = yup.object().shape({
+    name: yup.string().required("Please enter valid name"),
+    email: yup.string().email().required("Please enter valid email"),
+    phone: yup
+      .number()
+      .typeError("That doesn't look like a phone number")
+      .positive("A phone number can't start with a minus")
+      .integer("A phone number can't include a decimal point")
+      .min(8)
+      .required("A phone number is required"),
+    service: yup.string().required("Please enter valid service"),
+    note: yup.string(),
+  });
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<Myfields>({ resolver: yupResolver(schema) });
+
+  const onSubmitForm = (data: Myfields) => {
+    console.log(data);
+  };
+
   return (
-    <form className="form w-[550px]  bg-white px-[75px] flex flex-col items-center gap-y-4 py-[66px]">
+    <form
+      className="form w-[550px]  bg-white px-[75px] flex flex-col items-center gap-y-4 py-[66px]"
+      onSubmit={handleSubmit(onSubmitForm)}
+    >
       <div className="flex flex-row relative  items-center">
         <input
+          {...register("name")}
           placeholder="Name"
           className="py-[18px]  px-[54px]"
           type="text"
@@ -33,8 +72,10 @@ function FormComponent() {
           />
         </svg>
       </div>
+      {errors.name && <span>{errors.name.message}</span>}
       <div className="flex flex-row relative  items-center">
         <input
+          {...register("email")}
           placeholder="Email"
           className="py-[18px]  px-[54px]"
           type="email"
@@ -63,8 +104,11 @@ function FormComponent() {
           />
         </svg>
       </div>
+      {errors.email && <span>{errors.email.message}</span>}
+
       <div className="flex flex-row relative  items-center">
         <input
+          {...register("phone")}
           placeholder="Phone"
           className="py-[18px]  px-[54px]"
           type="number"
@@ -86,8 +130,11 @@ function FormComponent() {
           />
         </svg>
       </div>
+      {errors.phone && <span>{errors.phone.message}</span>}
+
       <div className="flex flex-row relative  items-center">
         <input
+          {...register("service")}
           placeholder="Services you need"
           className="py-[18px]  px-[54px]"
           type="text"
@@ -116,9 +163,11 @@ function FormComponent() {
           />
         </svg>
       </div>
+      {errors.service && <span>{errors.service.message}</span>}
 
       <div className="flex flex-row relative ">
         <textarea
+          {...register("note")}
           className="h-[136px] py-[18px] resize-none px-[54px]"
           name=""
           id=""
@@ -151,7 +200,10 @@ function FormComponent() {
         </svg>
       </div>
 
-      <button className=" bg-smalt-blue-500 w-full text-white uppercase font-bold flex flex-row items-center justify-center gap-3 py-[23px] px-[109px]">
+      <button
+        type="submit"
+        className=" bg-smalt-blue-500 w-full text-white uppercase font-bold flex flex-row items-center justify-center gap-3 py-[23px] px-[109px]"
+      >
         Get an appointment
       </button>
     </form>

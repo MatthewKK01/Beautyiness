@@ -3,6 +3,7 @@ import AboutBanner from "../components/AboutBanner";
 import facemask from "../images/faceMask.jpg";
 import "../components/Services.css";
 import cucumber from "../images/cucumpers.jpg";
+import masaji from "../images/masaji.jpg";
 
 import tmebi from "../images/tmebi.jpg";
 import kvebi from "../images/kvebi.jpg";
@@ -18,41 +19,11 @@ function Services() {
         content={"Well Experience Beauty at your Service"}
       />
 
-      <article className="grid grid-cols-2 relative grid-rows-2 gap-0 w-[1200px] m-auto">
-        <div className="bgCenter absolute left-1/2 top-1/2 -translate-x-1/2  -translate-y-1/2 -z-10"></div>
-
-        <img src={tmebi} alt="" />
-        <div className="pt-7 pl-16">
-          <ServicesComponent service={"face mask"} cost={48} />
-          <ServicesComponent service={"full body massage"} cost={54} />
-          <ServicesComponent service={"geothermal spa"} cost={54} />
-          <ServicesComponent service={"sauna relax"} cost={73} />
-          <Link to="/appointment">
-            <button className="border-2 mt-9 border-smalt-blue-500 px-8 py-6 text-sm font-extrabold uppercase leading-4 tracking-widest">
-              get an apointment
-            </button>
-          </Link>
-        </div>
-        <div className="pt-32 pr-16">
-          <ServicesComponent service={"face mask"} cost={48} />
-          <ServicesComponent service={"full body massage"} cost={54} />
-          <ServicesComponent service={"geothermal spa"} cost={54} />
-          <ServicesComponent service={"sauna relax"} cost={73} />
-
-          <Link to="/appointment">
-            <button className="border-2 mt-9 border-smalt-blue-500 px-8 py-6 text-sm font-extrabold uppercase leading-4 tracking-widest">
-              get an apointment
-            </button>
-          </Link>
-        </div>
-        <img src={kvebi} alt="" />
-      </article>
-      <section className="services relative w-[1200px] m-auto flex flex-col items-center">
-        <article className="grid grid-cols-2 grid-rows-2 gap-0">
+      <section className="py-[131px]">
+        <article className="grid grid-cols-2 relative grid-rows-2 gap-0 w-[1200px] m-auto">
           <div className="bgCenter absolute left-1/2 top-1/2 -translate-x-1/2  -translate-y-1/2 -z-10"></div>
-          <div className="bgCenter absolute left-1/2 top-0 -translate-x-1/2  -translate-y-1/2 -z-10"></div>
 
-          <img src={cucumber} alt="" />
+          <img src={tmebi} alt="" />
           <div className="pt-7 pl-16">
             <ServicesComponent service={"face mask"} cost={48} />
             <ServicesComponent service={"full body massage"} cost={54} />
@@ -69,13 +40,60 @@ function Services() {
             <ServicesComponent service={"full body massage"} cost={54} />
             <ServicesComponent service={"geothermal spa"} cost={54} />
             <ServicesComponent service={"sauna relax"} cost={73} />
+
             <Link to="/appointment">
               <button className="border-2 mt-9 border-smalt-blue-500 px-8 py-6 text-sm font-extrabold uppercase leading-4 tracking-widest">
                 get an apointment
               </button>
             </Link>
           </div>
-          <img src={facemask} alt="" />
+          <img src={kvebi} alt="" />
+        </article>
+        <section className="services relative w-[1200px] m-auto flex flex-col items-center">
+          <article className="grid grid-cols-2 grid-rows-2 gap-0">
+            <div className="bgCenter absolute left-1/2 top-1/2 -translate-x-1/2  -translate-y-1/2 -z-10"></div>
+
+            <img src={cucumber} alt="" />
+            <div className="pt-7 pl-16">
+              <ServicesComponent service={"face mask"} cost={48} />
+              <ServicesComponent service={"full body massage"} cost={54} />
+              <ServicesComponent service={"geothermal spa"} cost={54} />
+              <ServicesComponent service={"sauna relax"} cost={73} />
+              <Link to="/appointment">
+                <button className="border-2 mt-9 border-smalt-blue-500 px-8 py-6 text-sm font-extrabold uppercase leading-4 tracking-widest">
+                  get an apointment
+                </button>
+              </Link>
+            </div>
+            <div className="pt-32 pr-16">
+              <ServicesComponent service={"face mask"} cost={48} />
+              <ServicesComponent service={"full body massage"} cost={54} />
+              <ServicesComponent service={"geothermal spa"} cost={54} />
+              <ServicesComponent service={"sauna relax"} cost={73} />
+              <Link to="/appointment">
+                <button className="border-2 mt-9 border-smalt-blue-500 px-8 py-6 text-sm font-extrabold uppercase leading-4 tracking-widest">
+                  get an apointment
+                </button>
+              </Link>
+            </div>
+            <img src={facemask} alt="" />
+          </article>
+        </section>
+        <article className="grid grid-cols-2 relative w-[1200px] m-auto  gap-0">
+          <div className="bgCenter h-[90px] absolute left-1/2 bottom-0 -translate-x-1/2  -z-10"></div>
+
+          <img src={masaji} alt="" />
+          <div className="pt-7 order-last pl-16">
+            <ServicesComponent service={"face mask"} cost={48} />
+            <ServicesComponent service={"full body massage"} cost={54} />
+            <ServicesComponent service={"geothermal spa"} cost={54} />
+            <ServicesComponent service={"sauna relax"} cost={73} />
+            <Link to="/appointment">
+              <button className="border-2 mt-9 border-smalt-blue-500 px-8 py-6 text-sm font-extrabold uppercase leading-4 tracking-widest">
+                get an apointment
+              </button>
+            </Link>
+          </div>
         </article>
       </section>
       <section className=" py-[131px] flex flex-col items-center justify-center bg-[#EBF3F5]">

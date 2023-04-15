@@ -10,6 +10,7 @@ import AboutPage from "./pages/About";
 import Services from "./pages/Services";
 import Appointments from "./pages/Appointments";
 import Location from "./pages/Location";
+import Blog from "./pages/Blog";
 import { useEffect } from "react";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/appointment" element={<Appointments />} />
         <Route path="/contact" element={<Location />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer />
     </div>
