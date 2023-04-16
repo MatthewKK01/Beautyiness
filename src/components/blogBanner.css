@@ -1,0 +1,7 @@
+.blogBanner {
+  background-image: url(../images/blogBanner.png);
+  background-repeat: no-repeat;
+  background-color: #1e2c30;
+  background-blend-mode: luminosity;
+  height: 625px;
+}
