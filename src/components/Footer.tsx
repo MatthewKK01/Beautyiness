@@ -169,7 +169,7 @@ function Footer() {
         </article>
       </div>
       <article className="copyright bg-[#111E22] text-white text-center p-5 font-normal text-lg">
-        <span>&copy;</span> Copyright 2023. Drafted by Mate Kavelashvili.
+        <span>&copy;</span> Copyright 2023. Drafted by Modusi.
       </article>
     </footer>
   );
